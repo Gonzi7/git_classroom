@@ -2,4 +2,5 @@
 const greeting = (name) => {
     return `Hello ${name}`
   }
-greeting('John')
+const saludo = greeting('Joelle')
+console.log(saludo)
