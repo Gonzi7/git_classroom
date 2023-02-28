@@ -1,13 +1,15 @@
 const express = require('express')
 const app = express()
+require('dotenv').config()
 
-app.listen(3000,()=> {
-  console.log("server lisen on port 3000")
+
+const puerto = process.env.port || 3000
+app.listen(puerto,()=> {
+  console.log(`Server on port ${puerto}`)
 })
-
-
-
-
+app.get("/",(request,response)=> {
+  response.send("Hello world")
+})
 
 
 
