@@ -1,2 +1,4 @@
 .env
 /folder2
+.idea/
+/node_modules
