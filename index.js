@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
-console.log(process.env.port)
+
 
 const puerto = process.env.port || 3000
 app.listen(puerto,()=> {
